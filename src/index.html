@@ -4,10 +4,19 @@
   <title>Exchange Rate Calculator</title>
 </head>
 <body>
-Enter a dollar amount:<br>
-Translate to:<br>
-<button type="button" id="submit">Translate</button><br>
-Amount in <US1:></US1:><br>
-Translated:<br>
+  <div>
+    Enter a dollar amount:<br>  <input type="number" id="amount-one" placeholder="0" value="1">
+  </div>
+<div>
+  Convert to:
+  <select id="currency-one">
+    <option value="RUB">RUB</option>
+  </select>
+
+</div>
+<button  id="submit">Convert</button><br>
+<div id="result">
+
+</div>
 </body>
 </html>
