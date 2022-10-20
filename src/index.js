@@ -1,7 +1,14 @@
 // User Interface Logic 
-import { Constructor, Constructor2 } from './constructor.js';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 
-const constructor = new Constructor(3, 3, 3);
+
+
+  function getCurrency(currency) {
+    fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`)
+    .then((response) => response.json())
+    .then(console.log);
+    }
+
+    getCurrency();
