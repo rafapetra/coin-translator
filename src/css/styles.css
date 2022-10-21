@@ -1,3 +1,72 @@
 body {
-  background-color: grey;
+  background-color: rgb(223, 223, 223);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width:600px;
+    background-color: beige;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .header {
+    order: 1;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-bottom: 25px;
+  }
+
+  .input {
+    order: 2;
+    margin: 5px;
+    padding:3px;
+    width: 300px;
+    padding:10px;
+  }
+
+  .inputBar {
+    width: 100px;
+  }
+
+  .convert {
+    order: 3;
+    margin: 5px;
+    padding:10px;
+    width: 300px;
+  }
+
+  .results {
+    order: 4;
+    margin: 5px;
+    padding:3px;
+  }
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.btn {
+  color: black;
+  background-color: aquamarine;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 15px;
+  min-height:30px; 
+  min-width: 120px;
+}
+
+.btn:hover {
+  background-color: blanchedalmond;
+}
+
+.btn:active {
+  background-color: #ffbf00;
 }
