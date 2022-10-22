@@ -4,25 +4,40 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Currency from './app.js';
 
+window.addEventListener("load", function() {
+  const button = document.getElementById('submit');
+  button.addEventListener('click', getCurrency)
+});
 
-const inputOne = document.getElementById('currency-one');
-const inputAmount = document.getElementById('amount-one');
-const resultDiv = document.getElementById('result');
-const button = document.getElementById('submit');
+  function getCurrency() {
+      Currency.getCurrency()
+    .then(function(data) {
+console.log(data)
+      if (data.result != 'success') {
+        printError(data);
+    } else {
+      printElements(data);
+    }
+  });
+}
 
-  function getCurrency(currency) {
-    const userInput = inputOne.value; 
-    const amount = inputAmount.value;
-
-      Currency.getCurrency(currency)
-    .then((data) => {
-      // console.log(data);
+    function printElements(data) {
+      const inputOne = document.getElementById('currency-one');
+      const inputAmount = document.getElementById('amount-one');
+      const resultDiv1 = document.getElementById('result1');
+      const resultDiv2 = document.getElementById('result2');
+      const equalSign = document.getElementById('equalSign');
+      const userInput = inputOne.value; 
+      const amount = inputAmount.value;
       const rate = data.conversion_rates[userInput];
-      resultDiv.innerText = `1 usd = ${amount * rate}`
-    });
+      resultDiv1.innerText = `${amount} USD`;
+      equalSign.innerText = `=`;
+      resultDiv2.style.display = 'block';
+      resultDiv2.innerText = `${amount * rate} ${userInput}`;
     }
 
-
-    button.addEventListener('click', getCurrency)
-
-
+    function printError(error) {
+      const inputOne = document.getElementById('currency-one').value;
+      const resultDiv1 = document.getElementById('result1');
+      resultDiv1.innerText = `There was an error accessing the currency data for ${inputOne}: ${error}`;
+    }

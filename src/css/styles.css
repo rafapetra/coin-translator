@@ -8,26 +8,29 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width:600px;
+    width:400px;
     background-color: beige;
-    padding: 20px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3px;
+    gap: 20px;
   } 
 
   .header {
     order: 1;
     font-weight: bold;
     font-size: 12pt;
-    margin-bottom: 25px;
+    background-color: #ffbf00;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+
   }
 
   .input {
     order: 2;
-    margin: 5px;
-    padding:3px;
     width: 300px;
-    padding:10px;
   }
 
   .inputBar {
@@ -36,21 +39,43 @@ body {
 
   .convert {
     order: 3;
-    margin: 5px;
-    padding:10px;
     width: 300px;
   }
 
   .results {
-    order: 4;
-    margin: 5px;
-    padding:3px;
+    order: 5;
+    display: flex;
+    flex-direction: colum;
+    width: 300px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .result1 {
+    order: 1;
+    margin-left: 10px;
+    padding: 2px;
+  }
+  .result2 {
+    order: 3;
+    margin-left: 10px;
+    background-color: #fdff32;
+    padding: 2px;
+    display: none;
+
+  }
+  .equalSign {
+    order: 2;
+    padding: 2px;
+    margin-left: 10px;
   }
 
 .button {
+  order: 4;
   display: flex;
   justify-content: center;
-  padding: 20px;
 }
 .btn {
   color: black;
@@ -64,9 +89,21 @@ body {
 }
 
 .btn:hover {
-  background-color: blanchedalmond;
+  background-color: chartreuse;
 }
 
 .btn:active {
-  background-color: #ffbf00;
+  background-color:chartreuse;
+}
+
+.author {
+  margin-top: 20px;
+  order: 4;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  font-size: 10px;
+  margin: auto;
+  margin-top: 10px;
 }
