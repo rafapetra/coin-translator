@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <title>Exchange Rate Calculator</title>
-</head>
-<body>
-  <div class="container">
-  <div class="header">
-    Exchange Rate Calculator
-  </div>
-  <div class="input">  Enter a dollar amount: <input class= "inputBar" type="number" id="amount-one" placeholder="0" value="1"></div>
-<div class="convert">
-  Convert to:
-  <select id="currency-one">
-    <option value="BRL">Brazilian Real</option>
-    <option value="RUB">Russian Rub</option>
-    <option value="EUR">Euro</option>
-    <option value="CAD">Canadian Dollar</option>
-    <option value="JPY">Japanese Yen</option>
-  </select></div>
-<div class="button">
-  <button  id="submit" class="btn">Convert</button>
-</div>
-<div id="results" class="results">
-  <div id="result1" class="result1"></div><div id='equalSign' class="equalSign"></div><div id="result2" class="result2"></div>
-</div>
-</div>
-<div id="results" class="author">
-  Developed by Rafael Petrachini</div>
-</div>
-</body>
+  <head>
+    <title>Exchange Rate Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Exchange Rate Calculator</div>
+      <div class="input">
+        Enter a dollar amount:
+        <input
+          class="inputBar"
+          type="number"
+          id="amount-one"
+          placeholder="0"
+          value="1"
+        />
+      </div>
+      <div class="convert">
+        Convert to:
+        <select id="currency-one">
+          <option value="BRL">Brazilian Real</option>
+          <option value="RUB">Russian Rub</option>
+          <option value="EUR">Euro</option>
+          <option value="CAD">Canadian Dollar</option>
+          <option value="JPY">Japanese Yen</option>
+        </select>
+      </div>
+      <div class="button">
+        <button id="submit" class="btn">Convert</button>
+      </div>
+      <div id="results" class="results">
+        <div id="result1" class="result1"></div>
+        <div id="equalSign" class="equalSign"></div>
+        <div id="result2" class="result2"></div>
+      </div>
+
+      <div id="results" class="author">Developed by Rafael Petrachini</div>
+    </div>
+  </body>
 </html>
