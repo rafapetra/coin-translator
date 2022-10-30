@@ -6,10 +6,10 @@
 
 ## Technologies Used
 
-* HTML
-* CSS
-* JavaScript
-* VS Code
+- HTML
+- CSS
+- JavaScript
+- VS Code
 
 ## Description
 
@@ -17,19 +17,22 @@ An application that provides daily updated currency exchnage from the US dollar 
 
 ## Setup/Installation Requirements
 
-* Clone the repository: 'https://github.com/rafapetra/coin-translator/'
-* Navigate to the 'coin-translator' directory on your computer.
-* Open with your favorite text editor (Visual Studio Code suggested)
-* To start a development server and view the project in the browser
-- Navigate to '[your-repo-folderName]' in your command line
-- Run the command "npm install" to install dependencies
-- Optionally, run the command "npm run build" to bundle the files
-- Finally, run the command "npm run start" to start a development server
+- Clone the repository: 'https://github.com/rafapetra/coin-translator/'
+- Navigate to the 'coin-translator' directory on your computer.
+- Open with your favorite text editor (Visual Studio Code suggested)
+- To start a development server and view the project in the browser
+
+* Navigate to '[your-repo-folderName]' in your command line
+* Run the command "npm install" to install dependencies
+* Optionally, run the command "npm run build" to bundle the files
 * To run tests, navigate to ''coin-translator' in your terminal and run the command "npm run test"
+* Go to https://www.exchangerate-api.com/ to get a free API key for the API call
+* Open the .env file and insert the key (ie: API_KEY=insert_api_key)
+* Finally, run the command "npm run start" to start a development server
 
 ## Known Bugs
 
-* n/a 
+- n/a
 
 ## License
 
@@ -42,4 +45,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
